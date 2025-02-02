@@ -78,11 +78,11 @@
 
         FUNCTION {
             bindings = <
-&kp TILDE  &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &mmv MOVE_UP     &kp F11     &kp F12    &kp PRINTSCREEN  &kp DEL    &kp K_CALCULATOR  &trans
-&trans     &bt BT_CLR    &bt BT_CLR_ALL  &trans        &trans        &trans          &mmv MOVE_DOWN   &soft_off   &kp KP_N7  &kp KP_N8        &kp KP_N9  &kp UNDER         &kp PLUS
-&trans     &out OUT_USB  &out OUT_BLE    &trans        &trans        &trans          &mmv MOVE_LEFT   &trans      &kp KP_N4  &kp KP_N5        &kp KP_N6  &kp LBRC          &kp RBRC
-&trans     &bootloader   &trans          &trans        &trans        &sys_reset      &mmv MOVE_RIGHT  &sys_reset  &kp KP_N1  &kp KP_N2        &kp KP_N3  &bootloader       &trans
-&trans     &trans        &trans          &trans        &trans        &trans          &mkp LCLK        &trans      &trans     &trans           &kp KP_N0  &kp KP_DOT
+&kp TILDE  &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4        &mmv MOVE_UP     &kp F11     &kp F12    &kp PRINTSCREEN  &kp DEL    &kp KP_NUMLOCK  &trans
+&trans     &bt BT_CLR    &bt BT_CLR_ALL  &trans        &trans        &kp K_CALCULATOR    &mmv MOVE_DOWN   &soft_off   &kp KP_N7  &kp KP_N8        &kp KP_N9  &kp UNDER       &kp PLUS
+&trans     &out OUT_USB  &out OUT_BLE    &trans        &trans        &trans              &mmv MOVE_LEFT   &trans      &kp KP_N4  &kp KP_N5        &kp KP_N6  &kp LBRC        &kp RBRC
+&trans     &bootloader   &trans          &trans        &trans        &sys_reset          &mmv MOVE_RIGHT  &sys_reset  &kp KP_N1  &kp KP_N2        &kp KP_N3  &bootloader     &trans
+&trans     &trans        &trans          &trans        &trans        &trans              &mkp LCLK        &trans      &trans     &trans           &kp KP_N0  &kp KP_DOT
             >;
 
             sensor-bindings = <&scroll_encoder>;
