@@ -65,11 +65,11 @@
 
         NAV {
             bindings = <
-&kp ESCAPE  &kp F1           &kp F2          &kp F3           &kp F4           &kp F5             &mmv MOVE_UP     &kp F6           &kp F7    &kp F8    &kp F9     &kp F10           &trans
-&trans      &trans           &mkp LCLK       &mkp MCLK        &mkp RCLK        &mkp MB4           &mmv MOVE_DOWN   &trans           &kp HOME  &kp UP    &kp PG_UP  &kp MINUS         &kp EQUAL
-&trans      &trans           &trans          &trans           &trans           &mkp MB5           &mmv MOVE_LEFT   &trans           &kp LEFT  &kp DOWN  &kp RIGHT  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
-&trans      &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &rgb_ug RGB_EFF  &rgb_ug RGB_EFR  &rgb_ug RGB_SPI    &mmv MOVE_RIGHT  &rgb_ug RGB_BRI  &kp END   &trans    &kp PG_DN  &trans            &trans
-&kp C_MUTE  &trans           &trans          &trans           &trans           &trans             &mkp LCLK        &trans           &trans    &trans    &trans     &trans
+&kp ESCAPE  &kp F1           &kp F2           &kp F3           &kp F4           &kp F5             &mmv MOVE_UP     &kp F6  &kp F7    &kp F8    &kp F9     &kp F10           &trans
+&trans      &trans           &mkp LCLK        &mkp MCLK        &mkp RCLK        &mkp MB4           &mmv MOVE_DOWN   &trans  &kp HOME  &kp UP    &kp PG_UP  &kp MINUS         &kp EQUAL
+&trans      &rgb_ug RGB_EFF  &rgb_ug RGB_SPI  &rgb_ug RGB_BRI  &rgb_ug RGB_SAI  &mkp MB5           &mmv MOVE_LEFT   &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
+&trans      &rgb_ug RGB_EFR  &rgb_ug RGB_SPD  &rgb_ug RGB_BRD  &rgb_ug RGB_SAD  &rgb_ug RGB_TOG    &mmv MOVE_RIGHT  &trans  &kp END   &trans    &kp PG_DN  &trans            &trans
+&kp C_MUTE  &trans           &trans           &trans           &trans           &trans             &mkp LCLK        &trans  &trans    &trans    &kp INS    &kp DEL
             >;
 
             display-name = "LAYER1";
@@ -78,27 +78,15 @@
 
         FUNCTION {
             bindings = <
-&kp TILDE  &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &mmv MOVE_UP     &kp F6  &kp F7  &kp F8      &kp F9     &kp F10      &trans
-&trans     &bt BT_CLR    &bt BT_CLR_ALL  &trans        &trans        &trans          &mmv MOVE_DOWN   &trans  &trans  &kp F11     &kp F12    &kp UNDER    &kp PLUS
-&trans     &out OUT_USB  &out OUT_BLE    &trans        &trans        &trans          &mmv MOVE_LEFT   &trans  &trans  &trans      &trans     &kp LBRC     &kp RBRC
-&trans     &sys_reset    &trans          &bootloader   &trans        &trans          &mmv MOVE_RIGHT  &trans  &trans  &sys_reset  &soft_off  &bootloader  &trans
-&trans     &trans        &trans          &trans        &trans        &trans          &mkp LCLK        &trans  &trans  &trans      &trans     &trans
+&kp TILDE  &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &mmv MOVE_UP     &kp F11     &kp F12    &kp PRINTSCREEN  &kp DEL    &kp K_CALCULATOR  &trans
+&trans     &bt BT_CLR    &bt BT_CLR_ALL  &trans        &trans        &trans          &mmv MOVE_DOWN   &soft_off   &kp KP_N7  &kp KP_N8        &kp KP_N9  &kp UNDER         &kp PLUS
+&trans     &out OUT_USB  &out OUT_BLE    &trans        &trans        &trans          &mmv MOVE_LEFT   &trans      &kp KP_N4  &kp KP_N5        &kp KP_N6  &kp LBRC          &kp RBRC
+&trans     &bootloader   &trans          &trans        &trans        &sys_reset      &mmv MOVE_RIGHT  &sys_reset  &kp KP_N1  &kp KP_N2        &kp KP_N3  &bootloader       &trans
+&trans     &trans        &trans          &trans        &trans        &trans          &mkp LCLK        &trans      &trans     &trans           &kp KP_N0  &kp KP_DOT
             >;
 
             sensor-bindings = <&scroll_encoder>;
             label = "LAYER2";
-        };
-
-        NUMERIC {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &kp K_CALC    &trans  &kp KP_CLEAR  &kp KP_EQUAL  &kp KP_SLASH  &kp KP_MULTIPLY  &kp KP_MINUS  &trans
-&trans  &trans  &trans  &trans  &trans  &trans        &trans  &trans        &kp KP_N7     &kp KP_N8     &kp KP_N9        &kp KP_PLUS   &trans
-&trans  &trans  &trans  &trans  &trans  &trans        &trans  &trans        &kp KP_N4     &kp KP_N5     &kp KP_N6        &trans        &trans
-&trans  &trans  &trans  &trans  &trans  &trans        &trans  &trans        &kp KP_N1     &kp KP_N2     &kp KP_N3        &kp KP_ENTER  &trans
-&trans  &trans  &trans  &trans  &trans  &trans        &trans  &trans        &trans        &trans        &kp KP_N0        &kp KP_DOT
-            >;
-
-            label = "LAYER3";
         };
     };
 };
