@@ -141,14 +141,14 @@ layers:
   - F12
   - PRINTSCREEN
   - $$mdi:backspace-reverse-outline$$
-  - CALCULATOR
+  - KP NUMLOCK
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:bluetooth-off$$
   - BT CLR ALL
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - CALCULATOR
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - '&soft_off'
   - KP 7
