@@ -62,7 +62,7 @@ layers:
   - $$mdi:keyboard-space$$
   - LAYER1
   - LAYER2
-  - {t: Gui+., s: Gui+>}
+  - Gui+.
   - $$mdi:apple-keyboard-shift$$
   LAYER1:
   - $$mdi:keyboard-esc$$
